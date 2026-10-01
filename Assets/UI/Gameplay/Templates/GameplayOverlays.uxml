@@ -1,0 +1,37 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Gameplay/GameplayHud.uss?fileID=7433441132597879392&amp;guid=40e3d2a4ed0a8e84ba40618caa5869d3&amp;type=3#GameplayHud"/>
+    <ui:VisualElement name="ContinueGameOverlay" class="gameplay-overlay continue-overlay">
+        <ui:VisualElement class="overlay-panel continue-panel">
+            <ui:Label name="ContinueGameTitle" text="Продолжить игру?" class="overlay-title"/>
+            <ui:Label name="ContinueGameDetails" text="Стоимость: 0. Дополнительные жизни: 1." class="overlay-details"/>
+            <ui:VisualElement class="overlay-actions">
+                <ui:Button name="ContinueGameButton" text="ПРОДОЛЖИТЬ" class="overlay-button overlay-button-primary"/>
+                <ui:Button name="ContinueMenuButton" text="В МЕНЮ" class="overlay-button overlay-button-secondary"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="PrizeResultOverlay" class="gameplay-overlay prize-overlay">
+        <ui:VisualElement class="overlay-panel prize-panel">
+            <ui:Label name="PrizeResultTitle" text="Большой приз!" class="overlay-title prize-title"/>
+            <ui:Label name="PrizeResultSubtitle" text="Обратитесь к оператору для выдачи приза." class="overlay-subtitle"/>
+            <ui:Label name="PrizeResultDetails" text="Очки: 0. Монеты: 0. Высота: 0 м." class="overlay-details prize-details"/>
+            <ui:VisualElement name="PrizeQrContainer" class="prize-qr-container">
+                <ui:Image name="PrizeQrImage" class="prize-qr-image"/>
+                <ui:Label name="PrizeQrPhone" text="+79999999999" class="prize-qr-phone"/>
+                <ui:Label name="PrizeQrMessage" text="QR-приз" class="prize-qr-message"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="PrizeStandContainer" class="prize-stand-container">
+                <ui:VisualElement class="prize-stand-cell prize-stand-cell--ready">
+                    <ui:Label text="1" class="prize-stand-cell-label"/>
+                </ui:VisualElement>
+                <ui:VisualElement class="prize-stand-cell prize-stand-cell--empty">
+                    <ui:Label text="2" class="prize-stand-cell-label"/>
+                </ui:VisualElement>
+                <ui:VisualElement class="prize-stand-cell prize-stand-cell--opening">
+                    <ui:Label text="3" class="prize-stand-cell-label"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:Button name="PrizeResultReturnButton" text="В МЕНЮ" class="overlay-button overlay-button-single"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

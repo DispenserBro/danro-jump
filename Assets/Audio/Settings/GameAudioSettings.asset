@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6b6fabd3acfe76448ca16ffafdbe9f5, type: 3}
+  m_Name: GameAudioSettings
+  m_EditorClassIdentifier: DanroJump.Runtime::DanroJump.Audio.GameAudioSettings
+  mixer: {fileID: 24100000, guid: e7f5dba03b1fe564095aec623e122722, type: 2}
+  musicGroup: {fileID: -7907471987795070158, guid: e7f5dba03b1fe564095aec623e122722, type: 2}
+  sfxGroup: {fileID: -769777606815116712, guid: e7f5dba03b1fe564095aec623e122722, type: 2}
+  uiGroup: {fileID: -5027576678584524412, guid: e7f5dba03b1fe564095aec623e122722, type: 2}
+  gameplayGroup: {fileID: 4708169676529525986, guid: e7f5dba03b1fe564095aec623e122722, type: 2}
+  ambienceGroup: {fileID: -7217844520931084221, guid: e7f5dba03b1fe564095aec623e122722, type: 2}
+  musicLoop: {fileID: 8300000, guid: b0296787b59f9f248b8361070a74a2b5, type: 3}
+  musicLoopVolume: 1
+  playMusicOnInitialize: 1
+  defaultMusicCue: 0
+  musicTracks:
+  - cue: 0
+    clip: {fileID: 8300000, guid: b0296787b59f9f248b8361070a74a2b5, type: 3}
+    outputGroupOverride: {fileID: 0}
+    volume: 1
+    loop: 1
+  - cue: 1
+    clip: {fileID: 8300000, guid: 3a30c29718ace1c468575da20ba204f1, type: 3}
+    outputGroupOverride: {fileID: 0}
+    volume: 1
+    loop: 0
+  - cue: 1
+    clip: {fileID: 8300000, guid: ff6aa1560276fae488e89d642928a57a, type: 3}
+    outputGroupOverride: {fileID: 0}
+    volume: 1
+    loop: 0
+  - cue: 1
+    clip: {fileID: 8300000, guid: 66f130eb74c4f9249ae760f50057506f, type: 3}
+    outputGroupOverride: {fileID: 0}
+    volume: 1
+    loop: 0
+  eventBindings:
+  - eventId: 20
+    channel: 2
+    outputGroupOverride: {fileID: 0}
+    clips:
+    - {fileID: 8300000, guid: fa0b6b9872cd9b84bb24e35b24e57fdf, type: 3}
+    volume: 0.45
+    pitchRange: {x: 0.96, y: 1.04}
+    spatial: 1
+  - eventId: 21
+    channel: 2
+    outputGroupOverride: {fileID: 0}
+    clips:
+    - {fileID: 8300000, guid: f59cd1f6b437f7d4f8fa63bad1e466a5, type: 3}
+    volume: 0.75
+    pitchRange: {x: 0.96, y: 1.04}
+    spatial: 1
+  - eventId: 20
+    channel: 2
+    outputGroupOverride: {fileID: 0}
+    clips:
+    - {fileID: 8300000, guid: fa0b6b9872cd9b84bb24e35b24e57fdf, type: 3}
+    volume: 0.35
+    pitchRange: {x: 0.96, y: 1.04}
+    spatial: 1
+  - eventId: 27
+    channel: 2
+    outputGroupOverride: {fileID: 0}
+    clips:
+    - {fileID: 8300000, guid: cfbbacd3ef3f01743aa42aea3cb29270, type: 3}
+    volume: 0.65
+    pitchRange: {x: 0.96, y: 1.04}
+    spatial: 1
+  - eventId: 30
+    channel: 2
+    outputGroupOverride: {fileID: 0}
+    clips:
+    - {fileID: 8300000, guid: e3dc6a0fbf543b64388f7b60615f4145, type: 3}
+    volume: 0.55
+    pitchRange: {x: 0.96, y: 1.04}
+    spatial: 1
+  - eventId: 32
+    channel: 2
+    outputGroupOverride: {fileID: 0}
+    clips:
+    - {fileID: 8300000, guid: 62fd512b6d0ddd6409b156be1d682416, type: 3}
+    volume: 0.65
+    pitchRange: {x: 0.96, y: 1.04}
+    spatial: 1
+  - eventId: 54
+    channel: 2
+    outputGroupOverride: {fileID: 0}
+    clips:
+    - {fileID: 8300000, guid: 2be8148962585984fa7c7f14ae577839, type: 3}
+    volume: 0.65
+    pitchRange: {x: 0.96, y: 1.04}
+    spatial: 1

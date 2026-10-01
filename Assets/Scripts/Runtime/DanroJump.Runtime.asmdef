@@ -1,0 +1,22 @@
+{
+    "name": "DanroJump.Runtime",
+    "rootNamespace": "DanroJump",
+    "references": [
+        "UniTask",
+        "Zenject",
+        "Unity.InputSystem",
+        "Unity.Addressables",
+        "Unity.ResourceManager",
+        "Unity.VisualEffectGraph.Runtime",
+        "Unity.2D.Animation.Runtime"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

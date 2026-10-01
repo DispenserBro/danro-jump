@@ -1,0 +1,405 @@
+.gameplay-hud-root {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 20px;
+    flex-direction: column;
+}
+
+.hud-column {
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.hud-column-left {
+    position: absolute;
+    left: 24px;
+    top: 20px;
+    width: 240px;
+    min-width: 0;
+    max-width: 240px;
+}
+
+.hud-column-right {
+    position: absolute;
+    right: 24px;
+    top: 190px;
+    width: 360px;
+    min-width: 0;
+    max-width: 360px;
+    align-items: flex-end;
+}
+
+.hud-center {
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    width: 500px;
+    height: 130px;
+    min-width: 0;
+    max-width: 500px;
+    margin-left: -250px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: flex-start;
+    background-size: 100% 100%;
+}
+
+.hud-plaque,
+.hud-height-plaque,
+.hud-stat-row,
+.overlay-panel,
+.overlay-button {
+    background-color: rgba(255, 255, 255, 0);
+    -unity-background-scale-mode: stretch-to-fill;
+    background-size: 100% 100%;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+}
+
+.hud-plaque-score {
+    width: 240px;
+    min-height: 104px;
+    padding-left: 14px;
+    padding-right: 24px;
+    padding-top: 16px;
+    padding-bottom: 14px;
+    background-image: url("project://database/Assets/Sprites/UI/Components/plashka_side.png");
+}
+
+.hud-height-plaque {
+    width: 500px;
+    min-width: 0;
+    max-width: 500px;
+    height: 130px;
+    padding-left: 82px;
+    padding-right: 82px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-image: url("project://database/Assets/Sprites/UI/Components/plashka_big.png");
+}
+
+.hud-height-text {
+    width: 280px;
+    min-width: 0;
+    max-width: 280px;
+    margin-top: 0;
+    align-items: center;
+}
+
+.hud-caption,
+.hud-stat-caption,
+.hud-state-value {
+    color: rgb(31, 79, 63);
+    -unity-font-style: bold;
+}
+
+.hud-caption {
+    font-size: 24px;
+}
+
+.hud-caption-center {
+    -unity-text-align: middle-center;
+}
+
+.hud-score-value {
+    margin-top: -14px;
+    color: rgb(31, 79, 63);
+    font-size: 36px;
+    -unity-font-style: bold;
+}
+
+.hud-height-value {
+    margin-top: -2px;
+    color: rgb(31, 79, 63);
+    font-size: 32px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+}
+
+.hud-stat-list {
+    width: 360px;
+    align-items: stretch;
+}
+
+.hud-stat-row {
+    height: 72px;
+    margin-bottom: 8px;
+    padding-left: 24px;
+    padding-right: 28px;
+    flex-direction: row;
+    align-items: center;
+    background-image: url("project://database/Assets/Sprites/UI/Components/plashka_small.png");
+}
+
+.hud-stat-caption {
+    width: 124px;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.hud-stat-value {
+    flex-grow: 1;
+    color: rgb(31, 79, 63);
+    font-size: 28px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-right;
+}
+
+.hud-state-value {
+    align-self: flex-end;
+    margin-right: 34px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.78);
+    background-color: rgba(31, 79, 63, 0.72);
+}
+
+.hud-icon {
+    width: 70px;
+    height: 70px;
+    -unity-background-scale-mode: scale-to-fit;
+    background-size: contain;
+}
+
+.hud-mini-icon {
+    width: 36px;
+    height: 36px;
+    -unity-background-scale-mode: scale-to-fit;
+    background-size: contain;
+}
+
+.hud-icon-crystal {
+    background-image: url("project://database/Assets/Sprites/UI/crystal_icon.png");
+}
+
+.hud-icon-crystal-right {
+    scale: -1 1;
+}
+
+.hud-icon-heart {
+    background-image: url("project://database/Assets/Sprites/UI/heart.png");
+}
+
+.hud-icon-coin {
+    background-image: url("project://database/Assets/Sprites/UI/coin.png");
+}
+
+.hud-icon-crab {
+    background-image: url("project://database/Assets/Sprites/UI/crab.png");
+}
+
+.gameplay-overlay-host,
+.gameplay-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.gameplay-overlay-host {
+    pointer-events: none;
+}
+
+.gameplay-overlay {
+    display: none;
+    pointer-events: auto;
+    justify-content: center;
+    align-items: center;
+    padding-left: 72px;
+    padding-right: 72px;
+    padding-top: 56px;
+    padding-bottom: 56px;
+}
+
+.continue-overlay {
+    background-color: rgba(31, 79, 63, 0.92);
+}
+
+.prize-overlay {
+    background-color: rgba(71, 57, 170, 0.94);
+}
+
+.overlay-panel {
+    max-width: 1180px;
+    min-width: 900px;
+    min-height: 520px;
+    padding-left: 86px;
+    padding-right: 86px;
+    padding-top: 72px;
+    padding-bottom: 70px;
+    align-items: center;
+    justify-content: center;
+    background-image: url("project://database/Assets/Sprites/UI/Components/plashka_big.png");
+}
+
+.prize-panel {
+    max-width: 1280px;
+    min-width: 1100px;
+    min-height: 650px;
+}
+
+.overlay-title {
+    color: rgb(31, 79, 63);
+    font-size: 76px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    white-space: normal;
+    -unity-font-definition: url("project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&guid=63991fec8a53abe4d9a7907ef7f0db77&type=3#RifficFree-Bold");
+}
+
+.prize-title {
+    font-size: 86px;
+}
+
+.overlay-details,
+.overlay-subtitle {
+    margin-top: 34px;
+    color: rgb(31, 79, 63);
+    font-size: 36px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    white-space: normal;
+    -unity-font-definition: url("project://database/Assets/Fonts/BerlinSansFBCyrillic-Regular.ttf?fileID=12800000&guid=a4371daf3f041f94bb8cd180d18cb961&type=3#BerlinSansFBCyrillic-Regular");
+}
+
+.overlay-subtitle {
+    font-size: 40px;
+}
+
+.prize-details {
+    margin-top: 28px;
+    color: rgba(31, 79, 63, 0.86);
+    font-size: 30px;
+}
+
+.prize-qr-container {
+    margin-top: 30px;
+    align-items: center;
+}
+
+.prize-qr-image {
+    width: 292px;
+    height: 292px;
+    background-color: rgb(255, 255, 255);
+}
+
+.prize-qr-phone,
+.prize-qr-message {
+    margin-top: 16px;
+    color: rgb(31, 79, 63);
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    white-space: normal;
+}
+
+.prize-qr-phone {
+    font-size: 34px;
+    -unity-font-definition: url("project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&guid=63991fec8a53abe4d9a7907ef7f0db77&type=3#RifficFree-Bold");
+}
+
+.prize-qr-message {
+    max-width: 900px;
+    font-size: 26px;
+    color: rgba(31, 79, 63, 0.88);
+    -unity-font-definition: url("project://database/Assets/Fonts/BerlinSansFBCyrillic-Regular.ttf?fileID=12800000&guid=a4371daf3f041f94bb8cd180d18cb961&type=3#BerlinSansFBCyrillic-Regular");
+}
+
+.overlay-actions {
+    margin-top: 64px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-button {
+    min-width: 420px;
+    height: 120px;
+    color: rgb(31, 79, 63);
+    font-size: 32px;
+    -unity-font-style: bold;
+    background-image: url("project://database/Assets/Sprites/UI/Components/button_white.png");
+    -unity-font-definition: url("project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&guid=63991fec8a53abe4d9a7907ef7f0db77&type=3#RifficFree-Bold");
+}
+
+.overlay-button-primary {
+    min-width: 480px;
+}
+
+.overlay-button-secondary {
+    margin-left: 34px;
+}
+
+.overlay-button-single {
+    margin-top: 66px;
+    min-width: 480px;
+}
+
+.prize-stand-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    max-width: 900px;
+    padding: 10px;
+}
+
+.prize-stand-cell {
+    width: 70px;
+    height: 70px;
+    margin: 8px;
+    border-radius: 12px;
+    border-width: 3px;
+    border-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.1);
+    justify-content: center;
+    align-items: center;
+}
+
+.prize-stand-cell-label {
+    color: rgb(255, 255, 255);
+    font-size: 26px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    -unity-font-definition: url("project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&guid=63991fec8a53abe4d9a7907ef7f0db77&type=3#RifficFree-Bold");
+}
+
+.prize-stand-cell--ready {
+    background-color: rgba(46, 204, 113, 0.25);
+    border-color: rgb(46, 204, 113);
+}
+
+.prize-stand-cell--empty {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-color: rgba(255, 255, 255, 0.15);
+    opacity: 0.5;
+}
+
+.prize-stand-cell--opening {
+    background-color: rgba(241, 196, 15, 0.4);
+    border-color: rgb(241, 196, 15);
+}
+
+.prize-stand-cell--opened {
+    background-color: rgba(52, 152, 219, 0.35);
+    border-color: rgb(52, 152, 219);
+}
+
+.prize-stand-cell--error {
+    background-color: rgba(231, 76, 60, 0.4);
+    border-color: rgb(231, 76, 60);
+}

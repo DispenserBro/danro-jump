@@ -1,0 +1,98 @@
+# User specific files
+/[Tt]emp/
+/[Aa]ssets/[Tt]emp/
+/[Aa]ssets/[Tt]emp.meta
+
+# Unity generated folders
+/[Ll]ibrary/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Pp]rofilerCaptures/
+/[Rr]ecordings/
+/[Aa]ssets/AssetStoreTools*
+
+# Local MCP/editor helper artifacts
+/[Pp]ackages/com.coplaydev.unity-mcp/
+/[Aa]ssets/[Pp]lugins.meta
+/[Aa]ssets/[Pp]lugins/[Rr]oslyn/
+/[Aa]ssets/[Pp]lugins/[Rr]oslyn.meta
+
+# IDE and editor state
+*.log
+.vs/
+.idea/
+.gradle/
+ExportedObj/
+*.csproj
+*.sln
+*.slnx
+*.booproj
+*.unityproj
+*.suo
+*.userosscache
+*.DotSettings.user
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.pdb
+*.mdb
+*.pdb.meta
+*.mdb.meta
+*.opendb
+*.VC.db
+sysinfo.txt
+mono_crash.*
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local build artifacts
+*.apk
+*.aab
+*.unitypackage
+/ServerData
+
+# Addressables generated content
+/[Aa]ssets/StreamingAssets/aa*
+/[Aa]ssets/AddressableAssetsData/link.xml*
+/[Aa]ssets/Addressables_Temp*
+/[Aa]ssets/AddressableAssetsData/*/*.bin*
+
+# Local Codex runtime artifacts
+/.codex/rag/
+/.codex/skills/start-required-mcp-servers/scripts/logs/
+/.codex/skills/start-required-mcp-servers/scripts/started_servers.json
+
+# Local agent/editor recovery artifacts
+/codex_raw_context_dump.txt
+/[Aa]ssets/InitTestScene*.unity
+/[Aa]ssets/InitTestScene*.unity.meta
+/[Aa]ssets/_Recovery/
+/[Aa]ssets/_Recovery.meta
+
+# Public snapshot: local-only data
+.env
+.env.*
+!.env.example
+.codex/
+.agents/
+.vscode/
+Library/
+Temp/
+Logs/
+UserSettings/
+Builds/
+.godot/
+.venv/
+__pycache__/
+node_modules/
+**/bin/
+**/obj/
+*.log

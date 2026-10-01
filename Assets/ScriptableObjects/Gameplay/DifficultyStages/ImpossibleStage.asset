@@ -1,0 +1,145 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f61540c86ba6be44ab2665a0a1e25a4a, type: 3}
+  m_Name: ImpossibleStage
+  m_EditorClassIdentifier: Assembly-CSharp::DanroJump.Gameplay.GameplayDifficultyStage
+  stageName: "\u041D\u0435\u0432\u043E\u0437\u043C\u043E\u0436\u043D\u044B\u0439
+    \u044D\u0442\u0430\u043F"
+  startY: 1450
+  verticalLength: 400
+  horizontalDistribution: 0
+  platforms:
+    platforms:
+    - prefab: {fileID: 964816656659499055, guid: b314e5b810bdbd841824f4b5d47bdd92, type: 3}
+      weight: 1
+    - prefab: {fileID: 964816656659499055, guid: 15b31b8e5d8677545b1ce2c8f700f901, type: 3}
+      weight: 0.55
+    verticalSpacingCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    initialVerticalSpacing: 8
+    maximumVerticalSpacing: 16
+  equipment:
+    prefabs:
+    - prefab: {fileID: 2924217409108151728, guid: fadbd87abf3b978409e093649eaaa5dd, type: 3}
+      weight: 1
+    - prefab: {fileID: 2204511747261850872, guid: f492b30d6a8267a458da3879562e4261, type: 3}
+      weight: 0.5
+    spawnChanceCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    initialSpawnChance: 1
+    maximumSpawnChance: 1
+  enemies:
+    prefabs:
+    - prefab: {fileID: 6051671913546024041, guid: dc382d4fdc981aa439af1624e230f11f, type: 3}
+      weight: 1
+    spawnChanceCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    initialSpawnChance: 0.85
+    maximumSpawnChance: 0.9
+  collectibles:
+    prefabs:
+    - prefab: {fileID: 7341068655679281185, guid: 9987915360f9bf740bc0939e23db9349, type: 3}
+      weight: 1
+    - prefab: {fileID: 1649926752591026283, guid: 42ac5c9fb765781449b1a8cdc5bd3d64, type: 3}
+      weight: 0.35
+    spawnChanceCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 1
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    initialSpawnChance: 0.35
+    maximumSpawnChance: 0.68

@@ -1,0 +1,50 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/MainMenu/MainMenu.uss?fileID=7433441132597879392&amp;guid=4227e9afdd5241647811c01ae0bf69dd&amp;type=3#MainMenu"/>
+    <ui:Template name="MainMenuModals" src="Templates/MainMenuModals.uxml"/>
+    <ui:VisualElement name="MainMenuRoot" class="main-menu-root">
+        <ui:VisualElement name="Decorations" enabled="true" style="flex-grow: 1;">
+            <ui:VisualElement name="Spark" class="spark spark-a" style="opacity: 1;"/>
+            <ui:VisualElement name="Spark_1" class="spark spark-b" style="opacity: 1;"/>
+            <ui:VisualElement name="Spark_2" class="spark spark-c" style="opacity: 1;"/>
+            <ui:VisualElement name="Spark_3" class="spark spark-d" style="opacity: 1;"/>
+            <ui:VisualElement name="Crystal" class="crystal-art crystal-left"/>
+            <ui:VisualElement name="Crystal_1" class="crystal-art crystal-right"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="CreditsLivesPanel" class="top-hud">
+            <ui:VisualElement enabled="true" class="resource-pill lives-pill" style="background-image: url(&quot;project://database/Assets/Sprites/UI/Components/icon.png?fileID=6934086728263231946&amp;guid=cd717660f24894143bbbd4102e1709e6&amp;type=3#icon_0&quot;); -unity-slice-left: 0; -unity-slice-top: 0; -unity-slice-right: 0; -unity-slice-bottom: 0; -unity-slice-scale: 0.5px; display: none;">
+                <ui:VisualElement class="hud-icon heart-icon"/>
+                <ui:Label text="3" name="LivesValue" class="hud-value" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;);"/>
+                <ui:Label text="ЖИЗНИ" class="hud-caption" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;);"/>
+            </ui:VisualElement>
+            <ui:VisualElement class="resource-pill coins-pill" style="-unity-slice-scale: 0.5px; width: 500px; height: 100px;">
+                <ui:VisualElement class="hud-icon coin-icon"/>
+                <ui:Label text="1000000000" name="CreditsValue" class="hud-value" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;);"/>
+                <ui:Label text="РУБ." class="hud-caption" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;);"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="AdditionalLivesPanel" class="extra-life-strip" style="align-content: flex-start; justify-content: flex-start; align-items: center; align-self: auto; -unity-slice-scale: 0.5px; background-image: url(&quot;project://database/Assets/Sprites/UI/Components/icon_1.png?fileID=8218771907821357143&amp;guid=dd3ae1d0db6319e48abc746c0d56666c&amp;type=3#icon_1_0&quot;); display: none;">
+            <ui:VisualElement style="flex-grow: 1; flex-direction: row; align-content: center; justify-content: flex-start; transform-origin: center; border-left-width: 0; align-items: stretch;">
+                <ui:Label text="1" class="exchange-text" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;);"/>
+                <ui:VisualElement class="exchange-icon coin-icon"/>
+                <ui:Label text="= 3" name="ExchangeLivesValue" class="exchange-text" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;);"/>
+                <ui:VisualElement class="exchange-icon heart-icon"/>
+            </ui:VisualElement>
+            <ui:Label text="ДОПОЛНИТЕЛЬНЫЕ ЖИЗНИ" class="exchange-caption" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;);"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="GameTitleArt" enabled="true" class="game-title-art" style="top: 20%; right: 15%; background-position-x: center; background-position-y: center; left: 15%; position: absolute; width: auto; height: auto; bottom: 70%;"/>
+        <ui:VisualElement name="SuperprizeText" class="super-prize-row" style="top: 35%; left: 20%; right: 20%; height: auto; align-content: center; align-self: center; justify-content: center;">
+            <ui:Label text="СУПЕРПРИЗ:" name="PrizeText" class="super-prize-label" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/Flatiron%20Regular.otf?fileID=12800000&amp;guid=81db9170474a65d4e87dc719e9fd4a62&amp;type=3#Flatiron Regular&quot;); font-size: 72px; -unity-font-style: normal;"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="MenuButtons" class="main-actions" style="left: 20%; right: 20%; top: 50%; align-items: center; align-self: center; align-content: center; justify-content: center; width: auto; bottom: auto;">
+            <ui:Button name="StartButton" text="ИГРАТЬ" selectable="true" emoji-fallback-support="true" class="menu-button play-button" style="width: 75%; height: 50%; -unity-slice-scale: 1px; -unity-slice-left: 0; -unity-slice-top: 0; -unity-slice-right: 0; -unity-slice-bottom: 0; -unity-slice-type: sliced; -unity-background-scale-mode: stretch-to-fill; background-position-x: center; background-position-y: center; background-size: 100% 100%; background-color: rgba(255, 255, 255, 0); background-image: url(&quot;project://database/Assets/Sprites/UI/Components/button_white.png?fileID=2800000&amp;guid=7938b80147b9fef4d87a0807b37459e7&amp;type=3#button_white&quot;); align-items: stretch; justify-content: flex-start; align-content: flex-start; -unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;); -unity-font-style: normal; -unity-text-generator: advanced; font-size: 48px;"/>
+            <ui:Button name="RulesButton" text="ПРАВИЛА" selectable="true" class="menu-button rules-button" style="width: 75%; height: 50%; background-image: url(&quot;project://database/Assets/Sprites/UI/Components/button_white.png?fileID=2800000&amp;guid=7938b80147b9fef4d87a0807b37459e7&amp;type=3#button_white&quot;); background-color: rgba(255, 255, 255, 0); -unity-font-style: normal; -unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;); font-size: 48px;"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="PriceLabel" class="price-banner" style="bottom: 10%; left: 30%; right: 30%; -unity-slice-scale: 0.5px; font-size: 14px;">
+            <ui:Label text="БЕСПЛАТНО" name="PriceText" class="price-label" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;); font-size: 36px; -unity-text-align: middle-center; text-overflow: clip; -unity-text-auto-size: best-fit 10px 48px; -unity-text-generator: advanced; -unity-font-style: normal;"/>
+        </ui:VisualElement>
+        <ui:Label text="тех. поддержка +79999999999" name="SupportPhoneText" class="support-line" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BerlinSansFBCyrillic-Regular.ttf?fileID=12800000&amp;guid=a4371daf3f041f94bb8cd180d18cb961&amp;type=3#BerlinSansFBCyrillic-Regular&quot;);"/>
+        <ui:Label text="robotail.ru" name="RobotailLink" class="support-site" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BerlinSansFBCyrillic-Regular.ttf?fileID=12800000&amp;guid=a4371daf3f041f94bb8cd180d18cb961&amp;type=3#BerlinSansFBCyrillic-Regular&quot;);"/>
+        <ui:VisualElement name="PlayerArt" class="character-art" style="top: 1321px; left: -178px;"/>
+        <ui:Instance template="MainMenuModals"/>
+    </ui:VisualElement>
+</ui:UXML>

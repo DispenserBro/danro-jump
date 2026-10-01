@@ -1,0 +1,7 @@
+<linker>
+  <assembly fullname="System">
+    <type fullname="System.IO.Ports.SerialPort" preserve="all" />
+    <type fullname="System.IO.Ports.Parity" preserve="all" />
+    <type fullname="System.IO.Ports.StopBits" preserve="all" />
+  </assembly>
+</linker>

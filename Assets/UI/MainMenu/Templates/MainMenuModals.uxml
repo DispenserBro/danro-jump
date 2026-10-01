@@ -1,0 +1,101 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/MainMenu/MainMenu.uss?fileID=7433441132597879392&amp;guid=4227e9afdd5241647811c01ae0bf69dd&amp;type=3#MainMenu"/>
+    <ui:VisualElement name="ModalLayer" class="modal-layer" style="opacity: 1; display: flex;">
+        <ui:VisualElement name="ModalBackdrop" class="modal-backdrop"/>
+        <ui:VisualElement name="RulesModal" class="modal-window rules-modal fullscreen-modal" style="display: flex; justify-content: space-between;">
+            <ui:Label text="ПРАВИЛА" name="Header" class="modal-title" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;); -unity-font-style: normal;"/>
+            <ui:Label text="Прыгай всё выше по платформам и не падай ниже камеры.&#10;&#10;Используй пружины и бонусы, чтобы подняться выше и добраться до суперприза.&#10;&#10;Чем выше забег, тем сложнее этапы и тем ценнее результат." name="Content" class="modal-text" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BerlinSansFBCyrillic-Regular.ttf?fileID=12800000&amp;guid=a4371daf3f041f94bb8cd180d18cb961&amp;type=3#BerlinSansFBCyrillic-Regular&quot;);"/>
+            <ui:VisualElement class="modal-actions">
+                <ui:Button name="RulesModalCloseButton" text="ПОНЯТНО" class="modal-button" style="width: 400px; height: 100px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;); font-size: 28px; -unity-slice-scale: 0.5px;"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="SettingsModal" class="modal-window settings-modal fullscreen-modal" style="display: flex;">
+            <ui:Label text="Настройки" class="modal-title settings-title" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;);"/>
+            <ui:VisualElement name="SettingsContent" class="settings-content">
+                <ui:ScrollView name="SettingsList" class="settings-list"/>
+                <ui:VisualElement name="SettingsDetails" class="settings-details" style="border-top-width: 0; border-top-color: rgb(0, 0, 0);">
+                    <ui:Label name="SettingsGroupTitleLabel" text="Группа" class="settings-current-group" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;); font-size: 48px;"/>
+                    <ui:Label name="SettingsStatusLabel" text="Загрузка сервисных настроек..." class="settings-status" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BerlinSansFBCyrillic-Regular.ttf?fileID=12800000&amp;guid=a4371daf3f041f94bb8cd180d18cb961&amp;type=3#BerlinSansFBCyrillic-Regular&quot;); font-size: 24px;"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="ButtonsGroup" class="modal-actions settings-actions" style="position: relative; right: auto; bottom: 2%; top: auto;">
+                <ui:Button name="SettingsSaveButton" text="СОХРАНИТЬ" class="modal-button settings-save-button" style="-unity-slice-scale: 0.5px; -unity-slice-type: sliced; -unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;); font-size: 28px; height: 100px; width: 400px;"/>
+                <ui:Button name="SettingsReloadButton" text="ОБНОВИТЬ" class="modal-button settings-secondary-button"/>
+                <ui:Button name="SettingsResetButton" text="СБРОС" class="modal-button settings-secondary-button"/>
+                <ui:Button name="SettingsCloseButton" text="ЗАКРЫТЬ" class="modal-button settings-secondary-button"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="ServiceInfoModal" class="modal-window service-info-modal fullscreen-modal" style="display: none;">
+            <ui:Label name="ServiceInfoTitle" text="Служебное окно" class="modal-title service-info-title" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;);"/>
+            <ui:Label name="ServiceInfoFocus" text="" class="service-info-focus" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BerlinSansFBCyrillic-Regular.ttf?fileID=12800000&amp;guid=a4371daf3f041f94bb8cd180d18cb961&amp;type=3#BerlinSansFBCyrillic-Regular&quot;);"/>
+            <ui:Label name="ServiceInfoContent" text="Данные пока недоступны." class="modal-text service-info-content" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BerlinSansFBCyrillic-Regular.ttf?fileID=12800000&amp;guid=a4371daf3f041f94bb8cd180d18cb961&amp;type=3#BerlinSansFBCyrillic-Regular&quot;);"/>
+            <ui:VisualElement class="modal-actions service-info-actions">
+                <ui:Button name="ServiceInfoCloseButton" text="ЗАКРЫТЬ" class="modal-button" style="width: 400px; height: 100px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;); font-size: 28px; -unity-slice-scale: 0.5px;"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="ServiceTextInputModal" class="modal-window service-text-input-modal fullscreen-modal" style="display: none;">
+            <ui:Label name="ServiceTextInputTitle" text="Ввод значения" class="modal-title service-text-input-title" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;);"/>
+            <ui:Label name="ServiceTextInputSetting" text="" class="service-text-input-setting" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BerlinSansFBCyrillic-Regular.ttf?fileID=12800000&amp;guid=a4371daf3f041f94bb8cd180d18cb961&amp;type=3#BerlinSansFBCyrillic-Regular&quot;);"/>
+            <ui:Label name="ServiceTextInputPreview" text="" class="service-text-input-preview" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;);"/>
+            <ui:VisualElement name="ServiceTextInputSlots" class="service-text-input-slots"/>
+            <ui:Label name="ServiceTextInputSymbol" text="" class="service-text-input-symbol" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;);"/>
+            <ui:Label name="ServiceTextInputStatus" text="" class="service-text-input-status" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BerlinSansFBCyrillic-Regular.ttf?fileID=12800000&amp;guid=a4371daf3f041f94bb8cd180d18cb961&amp;type=3#BerlinSansFBCyrillic-Regular&quot;);"/>
+            <ui:VisualElement class="modal-actions service-text-input-actions">
+                <ui:Button name="ServiceTextInputConfirmButton" text="OK" class="modal-button service-text-input-action-button" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;); -unity-slice-scale: 0.5px;"/>
+                <ui:Button name="ServiceTextInputDeleteButton" text="УДАЛИТЬ" class="modal-button service-text-input-action-button" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;); -unity-slice-scale: 0.5px;"/>
+                <ui:Button name="ServiceTextInputCancelButton" text="ОТМЕНА" class="modal-button service-text-input-action-button" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;); -unity-slice-scale: 0.5px;"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="QrSettingsModal" class="modal-window prize-level-add-modal qr-settings-modal fullscreen-modal" style="display: none;">
+            <ui:Label name="QrSettingsTitle" text="Настройки QR" class="modal-title prize-level-add-title" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;);"/>
+            <ui:VisualElement class="prize-level-add-card qr-settings-card" style="background-image: none;">
+                <ui:Label text="Уровень QR" class="prize-level-add-caption" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BerlinSansFBCyrillic-Regular.ttf?fileID=12800000&amp;guid=a4371daf3f041f94bb8cd180d18cb961&amp;type=3#BerlinSansFBCyrillic-Regular&quot;); color: rgb(255, 255, 255);"/>
+                <ui:VisualElement class="prize-level-add-stepper">
+                    <ui:Button name="QrSettingsTierPreviousButton" text="" class="modal-button prize-level-step-button" style="width: 75px; height: 50px; background-image: url(&quot;project://database/Assets/Sprites/UI/Components/arrow.png?fileID=-765150924802650856&amp;guid=d639caa9dc052b547b73dce9a856e78f&amp;type=3#arrow_0&quot;); rotate: -90deg;"/>
+                    <ui:Label name="QrSettingsTierValue" text="Бронзовый" class="prize-level-add-value prize-level-add-kind-value" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;); -unity-slice-scale: 0.5px;"/>
+                    <ui:Button name="QrSettingsTierNextButton" text="" class="modal-button prize-level-step-button" style="rotate: 90deg; color: rgb(255, 255, 255); width: 75px; height: 50px; background-image: url(&quot;project://database/Assets/Sprites/UI/Components/arrow.png?fileID=-765150924802650856&amp;guid=d639caa9dc052b547b73dce9a856e78f&amp;type=3#arrow_0&quot;);"/>
+                </ui:VisualElement>
+                <ui:Label text="Текст приза" class="prize-level-add-caption" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BerlinSansFBCyrillic-Regular.ttf?fileID=12800000&amp;guid=a4371daf3f041f94bb8cd180d18cb961&amp;type=3#BerlinSansFBCyrillic-Regular&quot;); color: rgb(255, 255, 255);"/>
+                <ui:Label name="QrSettingsPrizeTextValue" text="&lt;пусто&gt;" class="prize-level-add-value prize-level-add-kind-value" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;); -unity-slice-scale: 0.5px;"/>
+                <ui:Button name="QrSettingsEditTextButton" text="ВВЕСТИ ТЕКСТ" class="modal-button prize-level-add-save-button qr-settings-edit-button" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;); -unity-slice-scale: 0.5px;"/>
+                <ui:Label name="QrSettingsStatus" text="" class="prize-level-add-status qr-settings-status" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BerlinSansFBCyrillic-Regular.ttf?fileID=12800000&amp;guid=a4371daf3f041f94bb8cd180d18cb961&amp;type=3#BerlinSansFBCyrillic-Regular&quot;);"/>
+            </ui:VisualElement>
+            <ui:VisualElement class="modal-actions prize-level-add-actions">
+                <ui:Button name="QrSettingsCloseButton" text="ЗАКРЫТЬ" class="modal-button prize-level-add-cancel-button" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;); -unity-slice-scale: 0.5px;"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="PrizeLevelsModal" class="modal-window prize-levels-modal fullscreen-modal" style="display: none;">
+            <ui:Label name="PrizeLevelsTitle" text="Призы за очки" class="modal-title prize-levels-title" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;);"/>
+            <ui:VisualElement class="prize-levels-card" style="background-image: none;">
+                <ui:ScrollView name="PrizeLevelsList" class="prize-levels-list"/>
+                <ui:Label name="PrizeLevelsStatus" text="Загрузка призовых уровней..." class="prize-levels-status" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BerlinSansFBCyrillic-Regular.ttf?fileID=12800000&amp;guid=a4371daf3f041f94bb8cd180d18cb961&amp;type=3#BerlinSansFBCyrillic-Regular&quot;); color: rgb(255, 255, 255);"/>
+            </ui:VisualElement>
+            <ui:VisualElement class="modal-actions prize-levels-actions">
+                <ui:Button name="PrizeLevelsAddButton" text="ДОБАВИТЬ" class="modal-button prize-levels-add-button" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;); -unity-slice-scale: 0.5px;"/>
+                <ui:Button name="PrizeLevelsCloseButton" text="ЗАКРЫТЬ" class="modal-button prize-levels-close-button" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;); -unity-slice-scale: 0.5px;"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="PrizeLevelAddModal" class="modal-window prize-level-add-modal fullscreen-modal" style="display: none;">
+            <ui:Label name="PrizeLevelAddTitle" text="Добавить приз" class="modal-title prize-level-add-title" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;);"/>
+            <ui:VisualElement class="prize-level-add-card" style="background-image: none;">
+                <ui:Label text="Очки" class="prize-level-add-caption" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BerlinSansFBCyrillic-Regular.ttf?fileID=12800000&amp;guid=a4371daf3f041f94bb8cd180d18cb961&amp;type=3#BerlinSansFBCyrillic-Regular&quot;); color: rgb(255, 255, 255);"/>
+                <ui:VisualElement class="prize-level-add-stepper">
+                    <ui:Button name="PrizeLevelAddScoreMinusButton" text="" class="modal-button prize-level-step-button" style="width: 75px; height: 50px; background-image: url(&quot;project://database/Assets/Sprites/UI/Components/arrow.png?fileID=-765150924802650856&amp;guid=d639caa9dc052b547b73dce9a856e78f&amp;type=3#arrow_0&quot;); rotate: -90deg;"/>
+                    <ui:Label name="PrizeLevelAddScoreValue" text="100" class="prize-level-add-value" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;); -unity-slice-scale: 0.5px;"/>
+                    <ui:Button name="PrizeLevelAddScorePlusButton" text="" class="modal-button prize-level-step-button" style="rotate: 90deg; width: 75px; height: 50px; color: rgb(255, 255, 255); background-image: url(&quot;project://database/Assets/Sprites/UI/Components/arrow.png?fileID=-765150924802650856&amp;guid=d639caa9dc052b547b73dce9a856e78f&amp;type=3#arrow_0&quot;);"/>
+                </ui:VisualElement>
+                <ui:Label text="Тип приза" class="prize-level-add-caption" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BerlinSansFBCyrillic-Regular.ttf?fileID=12800000&amp;guid=a4371daf3f041f94bb8cd180d18cb961&amp;type=3#BerlinSansFBCyrillic-Regular&quot;);"/>
+                <ui:VisualElement class="prize-level-add-stepper">
+                    <ui:Button name="PrizeLevelAddKindPreviousButton" text="" class="modal-button prize-level-step-button" style="width: 75px; height: 50px; background-image: url(&quot;project://database/Assets/Sprites/UI/Components/arrow.png?fileID=-765150924802650856&amp;guid=d639caa9dc052b547b73dce9a856e78f&amp;type=3#arrow_0&quot;); rotate: -90deg;"/>
+                    <ui:Label name="PrizeLevelAddKindValue" text="QR-код" class="prize-level-add-value prize-level-add-kind-value" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;); -unity-slice-scale: 0.5px;"/>
+                    <ui:Button name="PrizeLevelAddKindNextButton" text="" class="modal-button prize-level-step-button" style="rotate: 90deg; color: rgb(255, 255, 255); width: 75px; height: 50px; background-image: url(&quot;project://database/Assets/Sprites/UI/Components/arrow.png?fileID=-765150924802650856&amp;guid=d639caa9dc052b547b73dce9a856e78f&amp;type=3#arrow_0&quot;);"/>
+                </ui:VisualElement>
+                <ui:Label name="PrizeLevelAddStatus" text="" class="prize-level-add-status" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BerlinSansFBCyrillic-Regular.ttf?fileID=12800000&amp;guid=a4371daf3f041f94bb8cd180d18cb961&amp;type=3#BerlinSansFBCyrillic-Regular&quot;);"/>
+            </ui:VisualElement>
+            <ui:VisualElement class="modal-actions prize-level-add-actions">
+                <ui:Button name="PrizeLevelAddSaveButton" text="СОХРАНИТЬ" class="modal-button prize-level-add-save-button" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;); -unity-slice-scale: 0.5px;"/>
+                <ui:Button name="PrizeLevelAddCancelButton" text="ОТМЕНА" class="modal-button prize-level-add-cancel-button" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;); -unity-slice-scale: 0.5px;"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

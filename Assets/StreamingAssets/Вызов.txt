@@ -1,0 +1,6 @@
+private void Awake()
+{
+	#if !UNITY_EDITOR
+        	StartCoroutine(CheckLicenseCoroutine());
+	#endif
+}

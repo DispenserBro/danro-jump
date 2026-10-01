@@ -1,0 +1,49 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <ui:Template name="GameplayOverlays" src="project://database/Assets/UI/Gameplay/Templates/GameplayOverlays.uxml?fileID=9197481963319205126&amp;guid=0c975b01026d5194dbc5f5264f0eee67&amp;type=3#GameplayOverlays"/>
+    <Style src="project://database/Assets/UI/Gameplay/GameplayHud.uss?fileID=7433441132597879392&amp;guid=40e3d2a4ed0a8e84ba40618caa5869d3&amp;type=3#GameplayHud"/>
+    <ui:VisualElement name="GameplayHudRoot" class="gameplay-hud-root" style="pointer-events: none;">
+        <ui:VisualElement name="LeftStats" class="hud-column hud-column-left" style="max-width: 300px;">
+            <ui:VisualElement name="VisualElement" class="hud-plaque hud-plaque-score" style="background-image: url(&quot;project://database/Assets/Sprites/UI/Components/icon.png?fileID=6934086728263231946&amp;guid=cd717660f24894143bbbd4102e1709e6&amp;type=3#icon_0&quot;); width: 260px; -unity-slice-scale: 0.5px; padding-left: 10px; padding-top: 10px; padding-bottom: 10px;">
+                <ui:Label text="ВЫСОТА" class="hud-caption hud-caption-center" style="font-size: 30px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;); color: rgb(255, 255, 255); -unity-text-align: middle-left;"/>
+                <ui:Label name="HeightValue" text="0 м" class="hud-height-value" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;); color: rgb(255, 255, 255); -unity-text-align: middle-left;"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="CenterStats" class="hud-center" style="background-image: url(&quot;project://database/Assets/Sprites/UI/Components/plashka_levels.png?fileID=8483911246306948391&amp;guid=cc33cc4cae199f847975aec2300a7950&amp;type=3#plashka_levels_1&quot;); -unity-slice-left: 152; -unity-slice-top: 0; -unity-slice-right: 157; -unity-slice-bottom: 0; -unity-slice-scale: 0.5px; background-size: 100% 100%; width: 360px; height: 120px; left: 50%; margin-left: -180px;">
+            <ui:VisualElement name="VisualElement" class="hud-height-plaque" style="background-image: none; -unity-slice-left: 100; -unity-slice-top: 100; -unity-slice-right: 100; -unity-slice-bottom: 100; -unity-slice-scale: 1px; padding-left: 48px; padding-right: 48px; width: auto; height: auto; padding-top: 10px;">
+                <ui:VisualElement name="VisualElement" class="hud-icon hud-icon-crystal" style="padding-right: 32px; padding-left: 64px; display: none;"/>
+                <ui:VisualElement class="hud-height-text" style="padding-top: 10px; padding-right: 24px; padding-bottom: 6px; padding-left: 24px;">
+                    <ui:Label text="ОЧКИ" class="hud-caption" style="color: rgb(255, 255, 255); -unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;); font-size: 30px;"/>
+                    <ui:Label name="ScoreValue" text="0" class="hud-score-value" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;); color: rgb(255, 255, 255);"/>
+                </ui:VisualElement>
+                <ui:VisualElement class="hud-icon hud-icon-crystal hud-icon-crystal-right" style="padding-left: 32px; padding-right: 64px; display: none;"/>
+            </ui:VisualElement>
+            <ui:Label name="ComboValue" text="x2 COMBO!" style="position: absolute; bottom: -80px; align-self: center; font-size: 54px; -unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;); color: rgb(255, 140, 0); -unity-text-outline-width: 3px; -unity-text-outline-color: rgb(0, 0, 0); text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.5); display: none; transition-property: scale; transition-duration: 0.08s; transition-timing-function: ease-out;"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="RightStats" class="hud-column hud-column-right">
+            <ui:VisualElement class="hud-stat-list">
+                <ui:VisualElement class="hud-stat-row" style="background-image: url(&quot;project://database/Assets/Sprites/UI/Components/plashka_side_white.png?fileID=-8000433899580543963&amp;guid=e294db7327c229e4dbf0f4585c2e41db&amp;type=3#plashka_side_white_0&quot;); -unity-slice-scale: 0.75px; background-color: rgba(255, 255, 255, 0); -unity-background-image-tint-color: rgba(0, 0, 0, 0.314);">
+                    <ui:VisualElement name="VisualElement" class="hud-mini-icon hud-icon-crystal"/>
+                    <ui:Label text="РЕКОРД" class="hud-stat-caption" style="color: rgb(255, 255, 255); -unity-font-definition: url(&quot;project://database/Assets/Fonts/BerlinSansFBCyrillic-Regular.ttf?fileID=12800000&amp;guid=a4371daf3f041f94bb8cd180d18cb961&amp;type=3#BerlinSansFBCyrillic-Regular&quot;); -unity-font-style: normal; font-size: 30px;"/>
+                    <ui:Label name="BestHeightValue" text="0 м" class="hud-stat-value" style="color: rgb(255, 255, 255); -unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;);"/>
+                </ui:VisualElement>
+                <ui:VisualElement class="hud-stat-row" style="background-image: url(&quot;project://database/Assets/Sprites/UI/Components/plashka_side_white.png?fileID=-8000433899580543963&amp;guid=e294db7327c229e4dbf0f4585c2e41db&amp;type=3#plashka_side_white_0&quot;); -unity-slice-scale: 0.75px; -unity-background-image-tint-color: rgba(0, 0, 0, 0.314);">
+                    <ui:VisualElement class="hud-mini-icon hud-icon-heart"/>
+                    <ui:Label text="ЖИЗНИ" class="hud-stat-caption" style="color: rgb(255, 255, 255); -unity-font-definition: url(&quot;project://database/Assets/Fonts/BerlinSansFBCyrillic-Regular.ttf?fileID=12800000&amp;guid=a4371daf3f041f94bb8cd180d18cb961&amp;type=3#BerlinSansFBCyrillic-Regular&quot;); font-size: 30px; -unity-font-style: normal;"/>
+                    <ui:Label name="LivesValue" text="3" class="hud-stat-value" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;); color: rgb(255, 255, 255);"/>
+                </ui:VisualElement>
+                <ui:VisualElement class="hud-stat-row" style="-unity-slice-scale: 0.75px; background-image: url(&quot;project://database/Assets/Sprites/UI/Components/plashka_side_white.png?fileID=-8000433899580543963&amp;guid=e294db7327c229e4dbf0f4585c2e41db&amp;type=3#plashka_side_white_0&quot;); -unity-background-image-tint-color: rgba(0, 0, 0, 0.314);">
+                    <ui:VisualElement class="hud-mini-icon hud-icon-coin"/>
+                    <ui:Label text="МОНЕТЫ" class="hud-stat-caption" style="color: rgb(255, 255, 255); -unity-font-definition: url(&quot;project://database/Assets/Fonts/BerlinSansFBCyrillic-Regular.ttf?fileID=12800000&amp;guid=a4371daf3f041f94bb8cd180d18cb961&amp;type=3#BerlinSansFBCyrillic-Regular&quot;); -unity-font-style: normal; font-size: 30px;"/>
+                    <ui:Label name="CoinsValue" text="0" class="hud-stat-value" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;); color: rgb(255, 255, 255);"/>
+                </ui:VisualElement>
+                <ui:VisualElement class="hud-stat-row" style="-unity-slice-scale: 0.75px; background-image: url(&quot;project://database/Assets/Sprites/UI/Components/plashka_side_white.png?fileID=-8000433899580543963&amp;guid=e294db7327c229e4dbf0f4585c2e41db&amp;type=3#plashka_side_white_0&quot;); -unity-background-image-tint-color: rgba(0, 0, 0, 0.314);">
+                    <ui:VisualElement class="hud-mini-icon hud-icon-crab"/>
+                    <ui:Label text="ПАДЕНИЯ" class="hud-stat-caption" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/BerlinSansFBCyrillic-Regular.ttf?fileID=12800000&amp;guid=a4371daf3f041f94bb8cd180d18cb961&amp;type=3#BerlinSansFBCyrillic-Regular&quot;); color: rgb(255, 255, 255); font-size: 30px; -unity-font-style: normal;"/>
+                    <ui:Label name="DeathsValue" text="0" class="hud-stat-value" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;); color: rgb(255, 255, 255);"/>
+                </ui:VisualElement>
+                <ui:Label name="StateValue" text="RUN" class="hud-state-value" style="-unity-font-definition: url(&quot;project://database/Assets/Fonts/RifficFree-Bold.ttf?fileID=12800000&amp;guid=63991fec8a53abe4d9a7907ef7f0db77&amp;type=3#RifficFree-Bold&quot;);"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:Instance template="GameplayOverlays" class="gameplay-overlay-host"/>
+</ui:UXML>

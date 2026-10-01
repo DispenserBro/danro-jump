@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: Default Local Group
+  m_GUID: 89fc1fb0b7336ca419f23062b0857137
+  m_SerializeEntries:
+  - m_GUID: 2ac8a4d8759da50468703edffcdb63fb
+    m_Address: ui/main-menu/templates/settings-bool-control
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ui-template
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3dc41f4dd71944f4a84b73b3617d0187
+    m_Address: ui/main-menu/templates/settings-button-control
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ui-template
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 40905558cac5cdb4894f2f9b76c5f92e
+    m_Address: settings/service-settings-database
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - service
+    - settings
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8bdc16de0a8def84884149599b00c65f
+    m_Address: ui/main-menu/templates/settings-group-header
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ui-template
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 94d66c77f966ace46af48ae1bfdc3b67
+    m_Address: ui/main-menu/templates/settings-text-control
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ui-template
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c12ecb9297b1a4a45a32d3913894fb87
+    m_Address: ui/main-menu/templates/settings-stepper-control
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - ui-template
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 2ab5dad59ce41a7468cdf522a3e8755d, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 7deadbb2cca4dca46a10cf3ec04ec31f, type: 2}
+    - {fileID: 11400000, guid: fab663b6ea8439941835d482156c1eea, type: 2}

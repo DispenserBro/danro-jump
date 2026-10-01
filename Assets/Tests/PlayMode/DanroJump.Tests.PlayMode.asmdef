@@ -1,0 +1,19 @@
+{
+    "name": "DanroJump.Tests.PlayMode",
+    "rootNamespace": "DanroJump.Tests.PlayMode",
+    "references": [
+        "DanroJump.Runtime"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "noEngineReferences": false
+}

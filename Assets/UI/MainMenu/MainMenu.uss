@@ -1,0 +1,896 @@
+.main-menu-root {
+    flex-grow: 1;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: rgb(45, 82, 31);
+    background-image: url("project://database/Assets/Sprites/UI/Backgrounds/strart_screen_art.png");
+    -unity-background-scale-mode: scale-and-crop;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+.forest-vignette {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(22, 43, 12, 0.18);
+}
+
+.spark {
+    position: absolute;
+    background-image: url("project://database/Assets/Sprites/UI/MainMenu/spark.png");
+    -unity-background-scale-mode: scale-to-fit;
+    opacity: 0.82;
+}
+
+.spark-a {
+    width: 112px;
+    height: 112px;
+    left: 92px;
+    top: 592px;
+}
+
+.spark-b {
+    width: 96px;
+    height: 96px;
+    right: 84px;
+    top: 858px;
+}
+
+.spark-c {
+    width: 72px;
+    height: 72px;
+    right: 184px;
+    bottom: 354px;
+    opacity: 0.66;
+}
+
+.spark-d {
+    width: 86px;
+    height: 86px;
+    left: 726px;
+    bottom: 242px;
+    opacity: 0.72;
+}
+
+.top-hud {
+    position: absolute;
+    left: 58px;
+    top: 76px;
+    width: 614px;
+    height: 98px;
+    flex-direction: row;
+}
+
+.resource-pill {
+    position: relative;
+    width: 284px;
+    height: 86px;
+    margin-right: 26px;
+    padding-left: 98px;
+    padding-top: 12px;
+    background-image: url("project://database/Assets/Sprites/UI/Components/icon.png");
+    -unity-background-scale-mode: stretch-to-fill;
+}
+
+.hud-icon {
+    position: absolute;
+    left: -22px;
+    top: -30px;
+    width: 110px;
+    height: 110px;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.heart-icon {
+    background-image: url("project://database/Assets/Sprites/UI/heart.png");
+}
+
+.coin-icon {
+    background-image: url("project://database/Assets/Sprites/UI/coin.png");
+}
+
+.hud-value {
+    font-size: 43px;
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+}
+
+.hud-caption {
+    position: absolute;
+    left: 6px;
+    bottom: -38px;
+    font-size: 24px;
+    letter-spacing: 3px;
+    -unity-font-style: bold;
+    color: rgb(84, 68, 174);
+}
+
+.extra-life-strip {
+    position: absolute;
+    left: 60px;
+    top: 224px;
+    width: 472px;
+    height: 104px;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 28px;
+    padding-right: 36px;
+    background-image: url("project://database/Assets/Sprites/UI/Components/button_white.png");
+    -unity-background-scale-mode: stretch-to-fill;
+}
+
+.exchange-text {
+    font-size: 36px;
+    -unity-font-style: bold;
+    color: rgb(0, 0, 0);
+    margin-right: 18px;
+}
+
+.exchange-icon {
+    width: 66px;
+    height: 66px;
+    margin-right: 26px;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.exchange-caption {
+    position: absolute;
+    left: 0;
+    bottom: -48px;
+    font-size: 22px;
+    letter-spacing: 3px;
+    -unity-font-style: bold;
+    color: rgb(84, 68, 174);
+}
+
+.game-title-art {
+    position: absolute;
+    right: 24px;
+    top: 340px;
+    width: 704px;
+    height: 208px;
+    background-image: url("project://database/Assets/Sprites/UI/MainMenu/Game_Title.png");
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.crystal-art {
+    position: absolute;
+    background-image: url("project://database/Assets/Sprites/UI/MainMenu/Crystal_art.png");
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.crystal-left {
+    left: -132px;
+    bottom: -54px;
+    width: 382px;
+    height: 594px;
+}
+
+.crystal-right {
+    left: 502px;
+    top: 846px;
+    width: 214px;
+    height: 314px;
+}
+
+.character-art {
+    position: absolute;
+    left: 46px;
+    top: 610px;
+    width: 604px;
+    height: 604px;
+    background-image: url("project://database/Assets/Sprites/UI/Character/character.png");
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.super-prize-row {
+    position: absolute;
+    left: 374px;
+    right: 34px;
+    top: 1032px;
+    height: 144px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.super-prize-label {
+    font-size: 58px;
+    letter-spacing: 4px;
+    -unity-font-style: bold;
+    color: rgb(189, 255, 0);
+    margin-right: 22px;
+}
+
+.super-prize-slot {
+    width: 118px;
+    height: 118px;
+    background-image: url("project://database/Assets/Sprites/Props/Collectibles/Gift.png");
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.main-actions {
+    position: absolute;
+    right: 26px;
+    top: 1188px;
+    width: 574px;
+}
+
+.menu-button {
+    width: 574px;
+    height: 126px;
+    margin-bottom: 26px;
+    border-width: 0;
+    font-size: 47px;
+    -unity-font-style: bold;
+    background-image: url("project://database/Assets/Sprites/UI/Components/button.png");
+    -unity-background-scale-mode: stretch-to-fill;
+}
+
+.play-button {
+    color: rgb(19, 73, 50);
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url("project://database/Assets/Sprites/UI/Components/button_white.png");
+}
+
+.rules-button {
+    color: rgb(23, 72, 31);
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.price-banner {
+    position: absolute;
+    left: 266px;
+    right: 266px;
+    bottom: 192px;
+    height: 112px;
+    align-items: center;
+    justify-content: center;
+    background-image: url("project://database/Assets/Sprites/UI/Components/plashka_central.png");
+    -unity-background-scale-mode: stretch-to-fill;
+}
+
+.price-label {
+    font-size: 45px;
+    -unity-font-style: bold;
+    color: rgb(22, 73, 45);
+}
+
+.service-area {
+    position: absolute;
+    left: 44px;
+    bottom: 38px;
+    width: 486px;
+    min-height: 120px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 24px;
+    background-color: rgba(11, 34, 17, 0.45);
+    border-width: 2px;
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.service-line {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.86);
+    margin-bottom: 5px;
+}
+
+.service-button {
+    position: absolute;
+    right: 14px;
+    bottom: 12px;
+    width: 128px;
+    height: 42px;
+    border-width: 0;
+    border-radius: 14px;
+    font-size: 16px;
+    -unity-font-style: bold;
+    color: rgba(255, 255, 255, 0.86);
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.support-line {
+    position: absolute;
+    right: 52px;
+    bottom: 96px;
+    font-size: 22px;
+    -unity-font-style: bold;
+    color: rgba(255, 255, 255, 0.92);
+}
+
+.support-site {
+    position: absolute;
+    right: 52px;
+    bottom: 58px;
+    font-size: 24px;
+    -unity-font-style: bold;
+    color: rgba(255, 255, 255, 0.96);
+}
+
+.modal-layer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    display: none;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+.modal-backdrop {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    background-color: rgb(84, 68, 174);
+}
+
+.modal-window {
+    width: 100%;
+    height: 100%;
+    padding-left: 92px;
+    padding-right: 92px;
+    padding-top: 46px;
+    padding-bottom: 34px;
+    border-radius: 0;
+    background-color: rgb(84, 68, 174);
+    border-width: 0;
+    justify-content: flex-start;
+}
+
+.fullscreen-modal {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+}
+
+.modal-title {
+    font-size: 58px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    color: rgb(206, 255, 26);
+}
+
+.modal-text {
+    margin-top: 72px;
+    margin-bottom: 72px;
+    font-size: 34px;
+    white-space: normal;
+    -unity-text-align: upper-left;
+    color: rgb(255, 255, 255);
+}
+
+.modal-actions {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-button {
+    width: 260px;
+    height: 88px;
+    border-width: 0;
+    font-size: 25px;
+    -unity-font-style: bold;
+    color: rgb(19, 73, 50);
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url("project://database/Assets/Sprites/UI/Components/button_white.png");
+    -unity-background-scale-mode: stretch-to-fill;
+}
+
+.modal-button:focus,
+.modal-button--focused {
+    -unity-background-image-tint-color: rgb(206, 255, 26);
+}
+
+.settings-modal {
+    padding-left: 76px;
+    padding-right: 20px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.settings-title {
+    display: none;
+}
+
+.settings-content {
+    flex-grow: 1;
+    flex-direction: column;
+    min-height: 0;
+}
+
+.settings-status {
+    margin-top: 8px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    white-space: normal;
+    -unity-text-align: upper-left;
+    color: rgba(255, 255, 255, 0.82);
+}
+
+.settings-list {
+    width: auto;
+    height: 70%;
+    margin-right: 0;
+    margin-bottom: 18px;
+}
+
+.settings-list .unity-scroll-view__vertical-scroller {
+    background-color: rgb(255, 255, 255);
+    border-width: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.settings-list .unity-scroll-view__vertical-scroller .unity-scroller__slider {
+    background-color: rgb(255, 255, 255);
+    border-width: 0;
+    width: 100%;
+    min-width: 0;
+    align-items: stretch;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    flex-grow: 1;
+}
+
+.settings-list .unity-scroll-view__vertical-scroller .unity-base-slider__tracker,
+.settings-list .unity-scroll-view__vertical-scroller .unity-base-slider__drag-container {
+    background-color: rgb(255, 255, 255);
+    border-width: 0;
+    width: 100%;
+    min-width: 0;
+    align-items: stretch;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.settings-list .unity-scroll-view__vertical-scroller .unity-base-slider__dragger {
+    background-color: rgb(0, 75, 48);
+    -unity-background-image-tint-color: rgb(0, 75, 48);
+    border-width: 0;
+    border-radius: 0;
+    width: 100%;
+    min-width: 100%;
+    align-self: stretch;
+    left: 0;
+    right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.settings-list .unity-scroll-view__vertical-scroller .unity-base-slider__dragger-border,
+.settings-list .unity-scroll-view__vertical-scroller .unity-base-slider__dragger > * {
+    background-color: rgb(0, 75, 48);
+    -unity-background-image-tint-color: rgb(0, 75, 48);
+    border-width: 0;
+    border-radius: 0;
+    width: 100%;
+    min-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.service-info-modal {
+    justify-content: space-between;
+}
+
+.service-info-title {
+    margin-top: 24px;
+}
+
+.service-info-focus {
+    margin-top: 28px;
+    font-size: 28px;
+    -unity-text-align: middle-center;
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.service-info-content {
+    flex-grow: 1;
+    margin-top: 52px;
+    margin-bottom: 52px;
+    font-size: 36px;
+    -unity-text-align: upper-center;
+}
+
+.service-info-actions {
+    margin-bottom: 24px;
+}
+
+.service-text-input-modal {
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.service-text-input-title {
+    margin-top: 12px;
+}
+
+.service-text-input-setting {
+    margin-top: 12px;
+    font-size: 28px;
+    -unity-text-align: middle-center;
+    color: rgba(255, 255, 255, 0.82);
+}
+
+.service-text-input-preview {
+    height: 74px;
+    margin-top: 26px;
+    margin-bottom: 22px;
+    padding-left: 28px;
+    padding-right: 28px;
+    font-size: 42px;
+    -unity-text-align: middle-center;
+    white-space: nowrap;
+    color: rgb(19, 73, 50);
+    background-color: rgb(255, 255, 255);
+}
+
+.service-text-input-slots {
+    min-height: 210px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-left: 36px;
+    margin-right: 36px;
+}
+
+.service-text-input-slot {
+    width: 62px;
+    height: 62px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    border-width: 3px;
+    border-color: rgba(255, 255, 255, 0.54);
+    border-radius: 0;
+    font-size: 30px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.service-text-input-slot--active {
+    color: rgb(19, 73, 50);
+    border-color: rgb(206, 255, 26);
+    background-color: rgb(206, 255, 26);
+}
+
+.service-text-input-symbol {
+    height: 70px;
+    margin-top: 16px;
+    font-size: 42px;
+    -unity-text-align: middle-center;
+    color: rgb(206, 255, 26);
+}
+
+.service-text-input-status {
+    height: 34px;
+    font-size: 20px;
+    -unity-text-align: middle-center;
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.service-text-input-actions {
+    margin-bottom: 18px;
+}
+
+.service-text-input-action-button {
+    width: 230px;
+    height: 78px;
+    margin-left: 14px;
+    margin-right: 14px;
+    font-size: 21px;
+}
+
+
+.prize-levels-modal,
+.prize-level-add-modal {
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.prize-levels-title,
+.prize-level-add-title {
+    margin-top: 12px;
+}
+
+.prize-levels-card,
+.prize-level-add-card {
+    flex-grow: 1;
+    margin-left: 54px;
+    margin-right: 54px;
+    margin-top: 28px;
+    margin-bottom: 28px;
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-top: 48px;
+    padding-bottom: 44px;
+    background-image: url("project://database/Assets/Sprites/UI/Components/plashka_big.png");
+    -unity-background-scale-mode: stretch-to-fill;
+}
+
+.prize-levels-list {
+    flex-grow: 1;
+    min-height: 0;
+    margin-bottom: 26px;
+}
+
+.prize-level-row {
+    min-height: 104px;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 18px;
+    padding-left: 38px;
+    padding-right: 32px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    background-image: url("project://database/Assets/Sprites/UI/Components/plashka_central_white.png");
+    -unity-background-scale-mode: stretch-to-fill;
+}
+
+.prize-level-score {
+    width: 34%;
+    font-size: 30px;
+    -unity-font-style: bold;
+    color: rgb(19, 73, 50);
+}
+
+.prize-level-kind {
+    flex-grow: 1;
+    font-size: 30px;
+    -unity-font-style: bold;
+    color: rgb(84, 68, 174);
+}
+
+.prize-level-delete-button {
+    width: 210px;
+    height: 72px;
+    font-size: 18px;
+}
+
+.prize-level-empty {
+    margin-top: 120px;
+    font-size: 32px;
+    white-space: normal;
+    -unity-text-align: middle-center;
+    color: rgb(19, 73, 50);
+}
+
+.prize-levels-status,
+.prize-level-add-status {
+    min-height: 38px;
+    font-size: 24px;
+    white-space: normal;
+    -unity-text-align: middle-center;
+    color: rgb(19, 73, 50);
+}
+
+.prize-levels-actions,
+.prize-level-add-actions {
+    margin-bottom: 18px;
+}
+
+.prize-levels-add-button,
+.prize-levels-close-button,
+.prize-level-add-save-button,
+.prize-level-add-cancel-button {
+    width: 300px;
+    height: 82px;
+    margin-left: 16px;
+    margin-right: 16px;
+    font-size: 22px;
+}
+
+.prize-level-add-card {
+    flex-grow: 0;
+    min-height: 600px;
+    justify-content: center;
+}
+
+.prize-level-add-caption {
+    margin-top: 18px;
+    margin-bottom: 8px;
+    font-size: 28px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    color: rgb(19, 73, 50);
+}
+
+.prize-level-add-stepper {
+    height: 104px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+}
+
+.prize-level-step-button {
+    width: 104px;
+    height: 82px;
+    font-size: 34px;
+}
+
+.prize-level-add-value {
+    min-width: 340px;
+    height: 82px;
+    margin-left: 22px;
+    margin-right: 22px;
+    padding-left: 26px;
+    padding-right: 26px;
+    font-size: 38px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    color: rgb(19, 73, 50);
+    background-image: url("project://database/Assets/Sprites/UI/Components/plashka_central_white.png");
+    -unity-background-scale-mode: stretch-to-fill;
+}
+
+.prize-level-add-kind-value {
+    min-width: 480px;
+    font-size: 34px;
+}
+
+.qr-settings-card {
+    align-items: center;
+}
+
+.qr-settings-edit-button {
+    align-self: center;
+    width: 340px;
+    margin-top: 34px;
+    margin-bottom: 22px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.qr-settings-status {
+    width: 620px;
+    align-self: center;
+    margin-top: 0;
+    color: rgb(19, 73, 50);
+}
+
+.settings-list .unity-scroll-view__vertical-scroller .unity-scroller__low-button,
+.settings-list .unity-scroll-view__vertical-scroller .unity-scroller__high-button {
+    display: none;
+    height: 0;
+    min-height: 0;
+    max-height: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-width: 0;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.settings-group-title--active {
+    -unity-background-image-tint-color: rgb(206, 255, 26);
+}
+
+.settings-group-title--collapsed {
+    opacity: 0.88;
+}
+
+.settings-focus-pointer {
+    position: absolute;
+    width: 46px;
+    min-width: 46px;
+    height: 64px;
+    font-size: 42px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    opacity: 1;
+    visibility: visible;
+    color: rgb(255, 255, 255);
+}
+
+.settings-row {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 54px;
+    margin-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.settings-details {
+    flex-grow: 0;
+    min-height: 96px;
+    min-width: 0;
+    padding-left: 0;
+    padding-right: 18px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.settings-current-group {
+    font-size: 26px;
+    -unity-font-style: bold;
+    white-space: normal;
+    color: rgb(255, 255, 255);
+}
+
+.settings-current-description {
+    margin-top: 28px;
+    font-size: 22px;
+    white-space: normal;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.settings-empty-state {
+    margin-top: 90px;
+    font-size: 28px;
+    white-space: normal;
+    -unity-text-align: middle-center;
+    color: rgb(255, 255, 255);
+}
+
+.settings-actions {
+    height: 88px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.settings-save-button {
+    width: 260px;
+    height: 84px;
+    font-size: 22px;
+}
+
+.settings-secondary-button {
+    width: 160px;
+    height: 62px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    display: none;
+}
