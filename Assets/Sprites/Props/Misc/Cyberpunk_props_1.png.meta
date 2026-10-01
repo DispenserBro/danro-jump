@@ -1,0 +1,585 @@
+fileFormatVersion: 2
+guid: 7bf41a239076f12409af68a145c07d6e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1399053603569282473
+    second: Cyberpunk_props_1_0
+  - first:
+      213: 1100813482814891994
+    second: Cyberpunk_props_1_1
+  - first:
+      213: -2895447785789467377
+    second: Cyberpunk_props_1_2
+  - first:
+      213: 7407033108088014589
+    second: Cyberpunk_props_1_3
+  - first:
+      213: 7809830371332692928
+    second: Cyberpunk_props_1_4
+  - first:
+      213: 8043010537941808652
+    second: Cyberpunk_props_1_5
+  - first:
+      213: 8081406879654216451
+    second: Cyberpunk_props_1_6
+  - first:
+      213: -9080979934918923593
+    second: Cyberpunk_props_1_7
+  - first:
+      213: -7261176428169544445
+    second: Cyberpunk_props_1_8
+  - first:
+      213: 2921321199939328582
+    second: Cyberpunk_props_1_9
+  - first:
+      213: 6035746059524109427
+    second: Cyberpunk_props_1_10
+  - first:
+      213: -619605586513102465
+    second: Cyberpunk_props_1_11
+  - first:
+      213: 1523159427912682666
+    second: Cyberpunk_props_1_12
+  - first:
+      213: -6120265967514298457
+    second: Cyberpunk_props_1_13
+  - first:
+      213: -5452579232558811000
+    second: Cyberpunk_props_1_14
+  - first:
+      213: -8964059378877632897
+    second: Cyberpunk_props_1_15
+  - first:
+      213: -5247374851799452925
+    second: Cyberpunk_props_1_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cyberpunk_props_1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 393
+        width: 1024
+        height: 1143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ad2a7607df6a6310800000000000000
+      internalID: 1399053603569282473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyberpunk_props_1_1
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 1234
+        width: 248
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad7642fb700e64f00800000000000000
+      internalID: 1100813482814891994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyberpunk_props_1_2
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 1451
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f05d35e549d41d7d0800000000000000
+      internalID: -2895447785789467377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyberpunk_props_1_3
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 1451
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df6c42f1e511bc660800000000000000
+      internalID: 7407033108088014589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyberpunk_props_1_4
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 1207
+        width: 219
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cb975f2857126c60800000000000000
+      internalID: 7809830371332692928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyberpunk_props_1_5
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 927
+        width: 228
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c06beb678738e9f60800000000000000
+      internalID: 8043010537941808652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyberpunk_props_1_6
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 919
+        width: 240
+        height: 239
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 303003b6dbce62070800000000000000
+      internalID: 8081406879654216451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyberpunk_props_1_7
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 926
+        width: 247
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ba25bebcd0e9f180800000000000000
+      internalID: -9080979934918923593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyberpunk_props_1_8
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 639
+        width: 218
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30db38b828e1b3b90800000000000000
+      internalID: -7261176428169544445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyberpunk_props_1_9
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 639
+        width: 122
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64a933d472e9a8820800000000000000
+      internalID: 2921321199939328582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyberpunk_props_1_10
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 639
+        width: 190
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 374f568ff0743c350800000000000000
+      internalID: 6035746059524109427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyberpunk_props_1_11
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 367
+        width: 238
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f79f90b7008b667f0800000000000000
+      internalID: -619605586513102465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyberpunk_props_1_12
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 367
+        width: 106
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aacc50dfd69532510800000000000000
+      internalID: 1523159427912682666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyberpunk_props_1_13
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 367
+        width: 181
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a7d5637782701ba0800000000000000
+      internalID: -6120265967514298457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyberpunk_props_1_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11
+        width: 233
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 888f8a5b31c8454b0800000000000000
+      internalID: -5452579232558811000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyberpunk_props_1_15
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 11
+        width: 427
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7e6d701d73499380800000000000000
+      internalID: -8964059378877632897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cyberpunk_props_1_16
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 8
+        width: 368
+        height: 317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 303fc23cf549d27b0800000000000000
+      internalID: -5247374851799452925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Cyberpunk_props_1_0: 1399053603569282473
+      Cyberpunk_props_1_1: 1100813482814891994
+      Cyberpunk_props_1_10: 6035746059524109427
+      Cyberpunk_props_1_11: -619605586513102465
+      Cyberpunk_props_1_12: 1523159427912682666
+      Cyberpunk_props_1_13: -6120265967514298457
+      Cyberpunk_props_1_14: -5452579232558811000
+      Cyberpunk_props_1_15: -8964059378877632897
+      Cyberpunk_props_1_16: -5247374851799452925
+      Cyberpunk_props_1_2: -2895447785789467377
+      Cyberpunk_props_1_3: 7407033108088014589
+      Cyberpunk_props_1_4: 7809830371332692928
+      Cyberpunk_props_1_5: 8043010537941808652
+      Cyberpunk_props_1_6: 8081406879654216451
+      Cyberpunk_props_1_7: -9080979934918923593
+      Cyberpunk_props_1_8: -7261176428169544445
+      Cyberpunk_props_1_9: 2921321199939328582
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
